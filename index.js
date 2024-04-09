@@ -1,4 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
 //     let foxImagesContainer = document.getElementById('fox-images');
 //     let newFoxBtn = document.getElementById('new-fox-btn');
 //     let foxForm = document.querySelector('form');
@@ -53,5 +53,5 @@
 //     fetchFoxImage();
 //     addDescription();
 //     // par.appendChild()
-// });
+});
 
