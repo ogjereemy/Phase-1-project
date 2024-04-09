@@ -1,0 +1,104 @@
+/* .navs{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    border: 2px solid gray;
+    height: 40px;
+    background-color: beige;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+body{
+   
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+
+.container {
+    max-width:700px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 40px;
+    color: #333;
+}
+
+#fox-images {
+    margin-top: 20px;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+    text-align: center;
+}
+
+#new-fox-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 40px;   
+}
+
+#new-fox-btn:hover {
+    background-color: #0056b3;
+}
+
+span{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 50px;
+}
+#addBtn{
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 40px;
+  
+}
+#addBtn:hover{
+    background-color: #0056b3;
+}
+#formDesc{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+
+}
+#formDesc:hover{
+    border-color: #007bff;
+
+} */
