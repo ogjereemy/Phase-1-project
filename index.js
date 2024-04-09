@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial load
     fetchFoxImage();
-    addDescription();
+    // addDescription();
     // par.appendChild()
 });
 
