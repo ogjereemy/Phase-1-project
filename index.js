@@ -21,16 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => console.error('Error fetching fox image:', error));
 
-        //     foxForm.addEventListener('submit', (e) => {
-        //         e.preventDefault();
-        //         let foxDescription = foxForm.querySelector("#desc").value
+            foxForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let foxDescription = foxForm.querySelector("#desc").value
             
-        //     let par = document.createElement("span");
-        //     par.textContent = foxDescription
-        //     // par.append.innerText = foxDescription;
-        //     foxImagesContainer.appendChild(par);
-        //     });
-        //     foxForm.reset();
+            let par = document.createElement("span");
+            par.textContent = foxDescription
+            // par.append.innerText = foxDescription;
+            foxImagesContainer.appendChild(par);
+            });
+            foxForm.reset();
     
     }
 
