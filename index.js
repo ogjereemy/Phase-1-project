@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function fetchFoxImage() {
 
-        // fetch('https://randomfox.ca/floof/')
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         let imageUrl = data.image;
-        //         let imgElement = document.createElement('img');
-        //         imgElement.src = imageUrl;
-        //         // foxImagesContainer.innerText = '';
-        //         foxImagesContainer.appendChild(imgElement);
+        fetch('https://randomfox.ca/floof/')
+            .then(response => response.json())
+            .then(data => {
+                let imageUrl = data.image;
+                let imgElement = document.createElement('img');
+                imgElement.src = imageUrl;
+                // foxImagesContainer.innerText = '';
+                foxImagesContainer.appendChild(imgElement);
     
-        //     })
-        //     .catch(error => console.error('Error fetching fox image:', error));
+            })
+            .catch(error => console.error('Error fetching fox image:', error));
 
         //     foxForm.addEventListener('submit', (e) => {
         //         e.preventDefault();
