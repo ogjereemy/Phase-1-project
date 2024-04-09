@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     newFoxBtn.addEventListener('click', fetchFoxImage);
     
-//     newFoxBtn.addEventListener('mouseover', {
-//         handleEvent: (event) => {
-//             event.preventDefault();
-//             // event.target.style.backgroundColor = 'blue';
-//         }
+    newFoxBtn.addEventListener('mouseover', {
+        handleEvent: (event) => {
+            event.preventDefault();
+            // event.target.style.backgroundColor = 'blue';
+        }
 //     })
 //     // newFoxBtn.addEventListener('mouseOver', {
 //     //     handleEvent: (event) => {
