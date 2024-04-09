@@ -38,7 +38,7 @@ h1 {
     color: #333;
 }
 
-/*#fox-images {
+#fox-images {
     margin-top: 20px;
 }
 
@@ -53,7 +53,7 @@ img {
     text-align: center;
 }
 
-#new-fox-btn {
+/*#new-fox-btn {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
