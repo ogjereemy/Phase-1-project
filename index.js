@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     }
 
-//     newFoxBtn.addEventListener('click', fetchFoxImage);
+    newFoxBtn.addEventListener('click', fetchFoxImage);
     
 //     newFoxBtn.addEventListener('mouseover', {
 //         handleEvent: (event) => {
