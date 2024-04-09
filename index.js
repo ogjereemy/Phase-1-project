@@ -41,17 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             // event.target.style.backgroundColor = 'blue';
         }
-//     })
-//     // newFoxBtn.addEventListener('mouseOver', {
-//     //     handleEvent: (event) => {
-//     //         event.target.foxImagesContainer.innerText = '';
-//     //     },
-//     // });
+    })
+    // newFoxBtn.addEventListener('mouseOver', {
+    //     handleEvent: (event) => {
+    //         event.target.foxImagesContainer.innerText = '';
+    //     },
+    // });
 
 
-//     // Initial load
-//     fetchFoxImage();
-//     addDescription();
-//     // par.appendChild()
+    // Initial load
+    fetchFoxImage();
+    addDescription();
+    // par.appendChild()
 });
 
