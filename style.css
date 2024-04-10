@@ -87,18 +87,18 @@ span{
 #addBtn:hover{
     background-color: #0056b3;
 }
-#formDesc{
+#desc{
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     margin-top: 20px;
     border-radius: 8px;
-    border-color: white;
+    border-color: white; 
     border-style: solid;
     border-width: 1px;
 
-}
-#formDesc:hover{
+} 
+#desc:hover{
     border-color: #007bff;
 
 } 

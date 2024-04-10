@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             let par = document.createElement("span");
             par.textContent = foxDescription
-            // par.append.innerText = foxDescription;
+            par.append.innerText = foxDescription;
             foxImagesContainer.appendChild(par);
-            });
+            })
             foxForm.reset();
     
     }
