@@ -20,28 +20,32 @@ document.addEventListener('DOMContentLoaded', function() {
     
             })
             .catch(error => console.error('Error fetching fox image:', error));
-
-            foxForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                let foxDescription = foxForm.querySelector("#desc").value
-            
-            let par = document.createElement("span");
-            par.textContent = foxDescription
-            par.append.innerText = foxDescription;
-            foxImagesContainer.appendChild(par);
-            })
-            foxForm.reset();
     
     }
+    foxForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let foxDescription = foxForm.querySelector("#desc").value
+    
+    let par = document.createElement("p");
+    par.textContent = foxDescription
+    // par.append.innerText = foxDescription;
+    foxImagesContainer.appendChild(par);
+    })
+    foxForm.reset();
 
     newFoxBtn.addEventListener('click', fetchFoxImage);
-    
-    newFoxBtn.addEventListener('mouseover', {
-        handleEvent: (event) => {
-            event.preventDefault();
-            // event.target.style.backgroundColor = 'blue';
-        }
+    newFoxBtn.addEventListener('click', (e) => {
+        newFoxBtn.textContent = "New Fox Added"
+        alert("Yaaayy! New cute Fox Added")
     })
+
+    newFoxBtn.addEventListener('mouseover', (e)=> {
+        e.target.style.backgroundColor = "green"
+    })
+    newFoxBtn.addEventListener('mouseout', (e)=> {
+        e.target.style.backgroundColor = "#007bff"
+    })
+    // deletefoxButton.addEventListener('click', () => {
     // newFoxBtn.addEventListener('mouseOver', {
     //     handleEvent: (event) => {
     //         event.target.foxImagesContainer.innerText = '';
