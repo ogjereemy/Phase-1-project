@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let foxImagesContainer = document.getElementById('fox-images');
     let newFoxBtn = document.getElementById('new-fox-btn');
     let foxForm = document.querySelector('form');
+    let likeBtns = document.getElementById("likeBtn");
     // let deletefoxButton = document.getElementById('delete-fox')
     
 //     function addDescription(){
@@ -44,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     newFoxBtn.addEventListener('mouseout', (e)=> {
         e.target.style.backgroundColor = "#007bff"
+    })
+    likeBtns.addEventListener('click', (e)=> {
+        e.target.textContent = "Liked"
     })
     // deletefoxButton.addEventListener('click', () => {
     // newFoxBtn.addEventListener('mouseOver', {
