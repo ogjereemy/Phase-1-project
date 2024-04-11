@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let newFoxBtn = document.getElementById('new-fox-btn');
     let foxForm = document.querySelector('form');
     let likeBtns = document.getElementById("likeBtn");
+    let navBtn = document.getElementsByClassName("nav-item");
     // let deletefoxButton = document.getElementById('delete-fox')
     
 //     function addDescription(){
@@ -31,8 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
     par.textContent = foxDescription
     // par.append.innerText = foxDescription;
     foxImagesContainer.appendChild(par);
-    })
     foxForm.reset();
+    })
+    
+
+    // foxForm.reset();
 
     newFoxBtn.addEventListener('click', fetchFoxImage);
     newFoxBtn.addEventListener('click', (e) => {
@@ -46,9 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
     newFoxBtn.addEventListener('mouseout', (e)=> {
         e.target.style.backgroundColor = "#007bff"
     })
-    likeBtns.addEventListener('click', (e)=> {
-        e.target.textContent = "Liked"
-    })
+    
+    
+    // likeBtns.addEventListener('click', (e)=> {
+    //     e.target.textContent = "Liked"
+    // })
     // deletefoxButton.addEventListener('click', () => {
     // newFoxBtn.addEventListener('mouseOver', {
     //     handleEvent: (event) => {
@@ -61,5 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchFoxImage();
     // addDescription();
     // par.appendChild()
+    // function addLike(){
+    //     let articleHearts = document.querySelect(".like-glyph")
+    //     articleHearts.addEventListener('click', (e)=> {
+    //         e.target.textContent = "Liked"
+    //     })
+    // }
+    // addLike();
+
+
+
 });
+
 

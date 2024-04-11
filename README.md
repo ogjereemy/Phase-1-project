@@ -42,6 +42,8 @@ By **Ogola Jeremy**
 
 # Live Link
 
+https://ogjereemy.github.io/Phase-1-project/
+
 ## Technologies Used
 
 1. JavaScript
