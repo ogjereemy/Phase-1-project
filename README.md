@@ -6,8 +6,7 @@ By **Ogola Jeremy**
 
 ## Description
 
-
-## Installation
+Random fox images is a web application that allows the user to see random fox images if the New fox button is clicked. The user can also add a description of the fox image. The user can also like the fox image
 
 ## Installation Requirements
 
@@ -54,7 +53,8 @@ https://ogjereemy.github.io/Phase-1-project/
 
 ## Support and Contact Details
 
-Incase of any questions, need for collaboration with this code, please reach out to me at; 
+Incase of any questions, need for collaboration with this code, please reach out to me at https://github.com/ogjereemy
+
 
 ## License
 MIT License

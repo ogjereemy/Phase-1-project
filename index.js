@@ -2,12 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let foxImagesContainer = document.getElementById('fox-images');
     let newFoxBtn = document.getElementById('new-fox-btn');
     let foxForm = document.querySelector('form');
-    let likeBtns = document.getElementById("likeBtn");
-    let navBtn = document.getElementsByClassName("nav-item");
-    // let deletefoxButton = document.getElementById('delete-fox')
-    
-//     function addDescription(){
-//     }
+     
 
     function fetchFoxImage() {
 
@@ -16,10 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 let imageUrl = data.image;
                 let imgElement = document.createElement('img');
+                let likeBtn = document.createElement('button')
+                likeBtn.id = "like-btn"
+                likeBtn.textContent = "Like ♡"
                 imgElement.src = imageUrl;
                 // foxImagesContainer.innerText = '';
                 foxImagesContainer.appendChild(imgElement);
-    
+                foxImagesContainer.appendChild(likeBtn)
+                likeBtn.addEventListener('click', () => {
+                    alert("Fox image has been liked!")
+                    likeBtn.textContent = "Liked ♥"
+                    likeBtn.style.backgroundColor = "pink"
+                })
             })
             .catch(error => console.error('Error fetching fox image:', error));
     
@@ -32,15 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
     par.textContent = foxDescription
     // par.append.innerText = foxDescription;
     foxImagesContainer.appendChild(par);
+
     foxForm.reset();
     })
-    
 
     // foxForm.reset();
 
     newFoxBtn.addEventListener('click', fetchFoxImage);
     newFoxBtn.addEventListener('click', (e) => {
-        newFoxBtn.textContent = "New Fox Added"
+        newFoxBtn.textContent = "Add another fox?"
+        alert("Do you want to add another fox?")
         alert("Yaaayy! New cute Fox Added")
     })
 
@@ -50,32 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
     newFoxBtn.addEventListener('mouseout', (e)=> {
         e.target.style.backgroundColor = "#007bff"
     })
-    
-    
-    // likeBtns.addEventListener('click', (e)=> {
-    //     e.target.textContent = "Liked"
-    // })
-    // deletefoxButton.addEventListener('click', () => {
-    // newFoxBtn.addEventListener('mouseOver', {
-    //     handleEvent: (event) => {
-    //         event.target.foxImagesContainer.innerText = '';
-    //     },
-    // });
-
 
     // Initial load
     fetchFoxImage();
-    // addDescription();
-    // par.appendChild()
-    // function addLike(){
-    //     let articleHearts = document.querySelect(".like-glyph")
-    //     articleHearts.addEventListener('click', (e)=> {
-    //         e.target.textContent = "Liked"
-    //     })
-    // }
-    // addLike();
-
-
 
 });
 
